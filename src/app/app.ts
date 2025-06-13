@@ -5,10 +5,12 @@ import { CommonModule } from '@angular/common';
 import { Navbar } from './_components/navbar/navbar';
 import { SecondaryButton } from "./_components/secondary-button/secondary-button";
 import { CertifiedItem } from "./_components/certified-item/certified-item";
+import { BaseUI } from "./_components/base-ui/base-ui";
+import { Certificados } from "./pages/certificados/certificados";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Navbar, CommonModule, PrimaryButton, SecondaryButton, CertifiedItem],
+  imports: [RouterOutlet, Navbar, CommonModule, PrimaryButton, SecondaryButton, CertifiedItem, BaseUI, Certificados],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
