@@ -14,3 +14,7 @@
 .custom-button:hover {
   opacity: 90%;
 }
+
+.custom-button:disabled {
+  cursor: not-allowed;
+}

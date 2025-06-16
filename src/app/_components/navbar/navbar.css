@@ -6,16 +6,12 @@
   padding-left: 12px;
 }
 
-.navbar-logo img {
-  height: 40px;
-}
-.active {
-  color: #3b5ac2;
+.navbar-logo {
+  cursor: pointer;
 }
 
-.nav-link.active {
-  color: #3b5ac2;
-  font-weight: 600;
+.navbar-logo img {
+  height: 40px;
 }
 
 .nav-item {
@@ -29,4 +25,18 @@
 
 .navbar-nav {
   gap: 24px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.nav-link.active {
+  color: #3b5ac2;
+  font-weight: 600;
+}
+
+.active {
+  color: #3b5ac2;
 }
