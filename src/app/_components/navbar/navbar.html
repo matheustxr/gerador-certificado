@@ -13,11 +13,15 @@
         <li class="nav-item d-flex align-items-center">
           <a
             routerLink="/"
+            #rlaListaCertificado="routerLinkActive"
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
             class="nav-link p-0"
           >
-            <i class="ph ph-medal"></i>
+            <i
+              class="ph ph-medal"
+              [ngClass]="{ active: rlaListaCertificado.isActive }"
+            ></i>
             Lista de certificados
           </a>
         </li>
@@ -25,11 +29,15 @@
         <li class="nav-item d-flex align-items-center">
           <a
             routerLink="/certificados/novo"
+            #rlaGerarCertificado="routerLinkActive"
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
             class="nav-link p-0"
           >
-            <i class="ph ph-circles-three-plus"></i>
+            <i
+              class="ph ph-circles-three-plus"
+              [ngClass]="{ active: rlaGerarCertificado.isActive }"
+            ></i>
             Gerar certificados
           </a>
         </li>
